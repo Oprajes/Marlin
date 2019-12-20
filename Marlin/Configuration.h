@@ -436,10 +436,10 @@
 
 // Uncomment one of these options to enable CoreXY, CoreXZ, or CoreYZ kinematics
 // either in the usual order or reversed
-#define COREXY
+// #define COREXY
 //#define COREXZ
 //#define COREYZ
-// #define COREYX
+#define COREYX
 //#define COREZX
 //#define COREZY
 
@@ -511,12 +511,12 @@
  */
 #define X_DRIVER_TYPE  LV8729
 #define Y_DRIVER_TYPE  LV8729
-#define Z_DRIVER_TYPE  TMC2208
+#define Z_DRIVER_TYPE  LV8729
 //#define X2_DRIVER_TYPE A4988
 //#define Y2_DRIVER_TYPE A4988
 //#define Z2_DRIVER_TYPE A4988
 //#define Z3_DRIVER_TYPE A4988
-#define E0_DRIVER_TYPE TMC2100
+#define E0_DRIVER_TYPE LV8729
 //#define E1_DRIVER_TYPE A4988
 //#define E2_DRIVER_TYPE A4988
 //#define E3_DRIVER_TYPE A4988
@@ -566,7 +566,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 510 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 328, 328, 1320, 510 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -900,8 +900,8 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 250
-#define Y_BED_SIZE 250
+#define X_BED_SIZE 300
+#define Y_BED_SIZE 300
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
