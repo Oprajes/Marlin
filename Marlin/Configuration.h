@@ -15,8 +15,8 @@
  *
  * :[-1, 0, 1, 2, 3, 4, 5, 6, 7]
  */
-#define SERIAL_PORT 0
-#define SERIAL_PORT_2 -1
+#define SERIAL_PORT -1
+#define SERIAL_PORT_2 0
 
 
 #define BAUDRATE 115200
@@ -273,7 +273,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 328, 328, 1320, 510 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 600, 600, 2600, 755 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -616,7 +616,7 @@
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
-#define Z_MAX_POS 290
+#define Z_MAX_POS 281
 
 /**
  * Software Endstops
